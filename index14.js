@@ -16,7 +16,7 @@ outside the loop, console.log the 'output' array
 */
 
 
-const input = [2,4,6,8,10,11,12];
+const input = [2, 4, 6, 8, 11, 20, 15, 22];
 const output = [];
 
 for(let i = 0; i < input.length; i++) {
@@ -25,6 +25,8 @@ for(let i = 0; i < input.length; i++) {
     
 }
 console.log(output);
+
+
 
 //Vowel vs. consonant pseudocode
 
@@ -37,14 +39,46 @@ console.log(output);
 //else if string[i] === "e", then vowel++
 //else, consonant++
 //then console.log(string + " has " + consonant + " consonants and " + vowel + " vowels")
-
-var vowel = 0, consonant = 0, string = "";
-
 //"a", "e", "i", "o", and "u" are considered vowels.
 //Every other letter is considered a consonant.
 
-for (let i = 0; i < string.length; i++) {
-  if (string[i] === "a") {
-    counter++
-  }
+var vowel = [];
+
+var consonant = [];
+
+const hello = "hello";
+console.log(hello)
+
+for(let i=0; i < hello.length; i++){
+    if( hello[i] === 'a' ||
+    hello[i]=== 'e' ||
+    hello[i] === 'i' ||
+    hello[i] === 'o' ||
+    hello[i] === 'u'){
+        vowel.push(hello[i]);
+    }else{
+        consonant.push(hello[i]);
+    }
 }
+console.log( hello + " has " + vowel + " and consonant has " + consonant );
+
+
+var vowel = [];
+
+var consonant = [];
+const stringIn = "ukelele";
+console.log(stringIn);
+
+for(let i=0; i < stringIn.length; i++){
+    if( stringIn[i] === 'a' ||
+    stringIn[i]=== 'e' ||
+    stringIn[i] === 'i' ||
+    stringIn[i] === 'o' ||
+    stringIn[i] === 'u'){
+        vowel.push(stringIn[i]);
+    }else{
+        consonant.push(stringIn[i]);
+    }
+}
+console.log("The Vowels are :" + vowel);
+console.log("The Consonants are :" + consonant);
