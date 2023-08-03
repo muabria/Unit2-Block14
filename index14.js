@@ -82,3 +82,26 @@ for(let i=0; i < stringIn.length; i++){
 }
 console.log("The Vowels are :" + vowel);
 console.log("The Consonants are :" + consonant);
+
+
+/* Reverse Array
+
+Create an array named backArray = []
+Create an array named forwArray = []
+In a for loop, start from the end and iterate until the 0th index until 
+i is >= 0 
+i = forwArray.length-1, i >= 0, i--
+Add backArray[i] to forwArray - backArray.push(forwArray[i])
+console.log(backArray)
+
+*/
+
+const forwArray = [1, 3, 5, 7, 9, 11];
+const backArray = [];
+
+for (i = forwArray.length-1; i >= 0; i--) {
+    backArray.push(forwArray[i]);
+}
+
+console.log(backArray);
+
