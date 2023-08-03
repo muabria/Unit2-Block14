@@ -105,3 +105,32 @@ for (i = forwArray.length-1; i >= 0; i--) {
 
 console.log(backArray);
 
+
+/* Fizz Buzz Pseudocode
+
+
+Create a code that prints each number from 1 to 100 on a new line
+For each multiple of 3, print 'Fizz' instead of the number
+For each multiple of 5, print 'Buzz' instead of the number
+for the numbers that are multiples of both 3 and 5, print 'FizzBuzz' instead of number
+
+create const FizzBuzz = 0
+in a for loop start from 0 until 'i<=100'
+if number % 3 === 0, print Fizz
+if number % 5 === 0, print Buzz
+if number % 3 === 0 AND % % === 0, print FizzBuzz
+Else print FizzBuzz[i]
+
+*/
+
+for (i = 0; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
